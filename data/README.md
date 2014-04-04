@@ -22,7 +22,7 @@
 This source repository holds artifacts that are used to provide 
 
 * data files (NER models, Entity data ...)
-* configurations of stanbol components or well known datasets, spefic domains
+* configurations of Stanbol components or well known datasets, specific domains
 
 This also contains the default configuration used with the default Stanbol
 Launchers. Have a look at the defaultdata and opennlp bundlelists in the
@@ -31,26 +31,26 @@ want to build their own launcher to look for examples.
 
 ## Management of Data Files 
 
-To avoid loading subversion repository with large binary files this artifacts
-are typically not included but need to be build/precomputed or downloaded form
-other sites. The the documentations of the according module for details.
+To avoid loading a Subversion repository with large binary files this artifacts
+are typically not included but need to be built/precomputed or downloaded from
+other sites. See the documentation of the according module for details.
 
-Modules of this repository tree are typically NOT part of the Stanbol reactor.
+Modules in this repository tree are typically *not* part of the Stanbol reactor.
 Because they are considered optional and typically it is necessary to
-download/ precompute some resources users might not want to do for each build.
+download/precompute some resources, users might not want to do so for each build.
 
-Bundles used as default configuration by the Stanbol Launchers are also
-available by included Maven repositories and will be downloaded during the
+Bundles used by the Stanbol Launchers in the default configuration are also
+available from included Maven repositories and will be downloaded during the
 normal Stanbol build (if not yet available in the local cache).
 
 ## OpenNLP
 
-This sub-folder contains bundles that contain several OpenNLP models. Such
+The OpenNLP sub-folder contains bundles that contain several OpenNLP models. Such
 bundles will contribute such files to the Stanbol DataFileProvider.
 
 ## Sites
 
-This sub-folder contains bundles that install ReferencedSites to the
+The sites sub-folder contains bundles that install ReferencedSites to the
 Stanbol Entityhub. Typically such bundles only contain the configuration but
 do not include the actual data. However for small data sets the index might
 also be included in the bundle.
@@ -62,9 +62,9 @@ Bundles created by the various modules depend on the following two components:
 
 ### DataFileProvider Service
 
-The DataFileProvoder Service is typically used by components that need to load
+The DataFileProvider Service is typically used by components that need to load
 big binary files to Apache Stanbol.
-See {stanbol-root}/commons/stanboltools/datafileprovider for details
+See {stanbol-root}/commons/stanboltools/datafileprovider for details.
 
 ### Bundleprovider
 
