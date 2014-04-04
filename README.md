@@ -35,14 +35,14 @@ In the Apache Stanbol source directory type
 
     $ mvn install
 
-If you want to skip the tests, use :
+If you want to skip the tests, use:
 
     $ mvn install -Dmaven.test.skip=true
     
 
 ### Launching the Apache Stanbol Server
 
-The recommended lanchers are packaged under the `launchers/` folder. For
+The recommended launchers are packaged under the `launchers/` folder. For
 instance:
 
     $ java -Xmx1g -jar launchers/full/target/org.apache.stanbol.launchers.full-0.10.0-incubating-SNAPSHOT.jar
@@ -64,7 +64,7 @@ Eclipse is the most popular IDE among Stanbol developers. Here are
 instructions to get you started with this IDE. For other IDEs / editors,
 please refer to their documentation and maven integration plugins.
 
-To generate the Eclipse project definition files, go to Stanbol source
+To generate the Eclipse project definition files, go to the Stanbol source
 directory and type:
 
     $ mvn eclipse:eclipse
@@ -97,12 +97,12 @@ by pressing `Shift+Ctrl+F`.
 ## Debugging an Apache Stanbol Instance from Eclipse
 
 To debug a locally running Stanbol instance from eclipse, run the stanbol
-launcher with::
+launcher with:
 
     $ java -Xdebug -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n \
            -jar org.apache.stanbol.some.launcher-[VERSION].jar -p 8080
 
-In eclipse, you can then create a new "Debug Configuration" with type "Remote
+In Eclipse, you can then create a new "Debug Configuration" with type "Remote
 Java Application" and connect it to localhost on port 8787.
 
 
@@ -147,15 +147,15 @@ release plugin [3] is used. For doing official release you start with
 
     $ mvn release:prepare
 
-[1] http://www.apache.org/dev/#releases
-[2] http://incubator.apache.org/guides/releasemanagement.html
-[3] http://maven.apache.org/plugins/maven-release-plugin/
+[1] http://www.apache.org/dev/#releases  
+[2] http://incubator.apache.org/guides/releasemanagement.html  
+[3] http://maven.apache.org/plugins/maven-release-plugin/  
 
 
 ## Useful links
 
   - Documentation will be published and mailing lists info on [the official
-    Stanbol page](http://incubator.apache.org/stanbol/)
+    Stanbol page](http://stanbol.apache.org/)
 
   - Please report bugs on the [Apache issue tracker](
     https://issues.apache.org/jira/browse/STANBOL)
